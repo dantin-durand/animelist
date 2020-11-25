@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Animelist</title>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script type="module">
+        import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.alertController = alertController;
+        import { loadingController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.loadingController = loadingController;
+      </script>
+    <script src="js/app.js" defer></script>
+    <script src="js/modules.js" defer></script>
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+          <ion-toolbar>
+            <ion-img class="ion-padding" src="img/logo.png"></ion-img>
+              <ion-searchbar animated="animated"></ion-searchbar>
+              <!-- <ion-button href="#" id="typeSearch" expand="block">Rechercher</ion-button> -->
+
+          </ion-toolbar>
+        </ion-header>
+  
+        <ion-content class="ion-padding" color="light">
+
+          <div id="results">
+            <ion-title>Aucune recherche.</ion-title>
+          </div>
+
+        </ion-content>
+  
+        <ion-footer>
+          <ion-toolbar>
+            <ion-title
+              ><img
+                src="img/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"
+                alt="Giphy"
+              />
+            </ion-title>
+          </ion-toolbar>
+        </ion-footer>
+      </ion-app>
+</body>
+</html>
